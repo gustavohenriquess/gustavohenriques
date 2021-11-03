@@ -1,22 +1,13 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--BLACK);
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-
 :root {
+  --BLACK:                #161616;     
+  --WHITE:                #fff;
+ 
+  --GRAY_DARK:            #242424;
+     
   --BLUE:                 #177ddc;
   --BLUE_LIGHT-PRIMARY:   #34aefa;
   --BLUE_LIGHT-SECONDARY: #65b7f3;

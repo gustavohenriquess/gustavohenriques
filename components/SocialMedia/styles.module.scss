@@ -1,0 +1,40 @@
+.mediaWeb {
+  
+  a {
+    color: var(--WHITE);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 2em;
+    text-decoration: none;
+  }
+
+  p {
+    width: auto;
+    margin-left: 1.5em;
+    font-size: .6em;
+  }
+}
+
+.mediaCard {
+
+  a {
+    width: 190px;
+    padding: 0.4em;
+    color: var(--WHITE);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8em;
+    text-decoration: none;
+    background-color: var(--GRAY_DARK);
+    border-radius: 20px;
+  }
+
+  p {
+    font-size: 0.7em;
+    margin: 0;
+    margin-left: 0.9em;
+    letter-spacing: 0.15em;
+  }
+}

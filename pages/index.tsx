@@ -3,6 +3,8 @@ import Head from 'next/head'
 
 import { SocialMedia } from '../components/SocialMedia'
 import { User } from '../components/User'
+import { Experience } from '../components/Experience'
+
 import {getMedias} from './api/socialMedia'
 import {getUser} from './api/userData'
 import { getExperiences } from './api/experiences'
@@ -44,7 +46,17 @@ const Home: NextPage = () => {
       </section>
       </div>
       <div className={styles.information}>
-      
+          { experiences.map((experience) => {
+              return (
+                <Experience 
+                  key={experience.title}
+                  title={experience.title}
+                  company={experience.company}
+                  description={experience.description}
+                />
+              )
+            })
+          }
       </div>
       
 

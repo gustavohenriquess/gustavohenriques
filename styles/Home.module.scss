@@ -37,6 +37,11 @@ $DESKTOP_SIZE:             1150px;
 }
 
 .information {
+
+  @media screen and (min-width: $SMALL_SMART_PHONE_SIZE) {
+    margin-top: 4em;
+  }
+
   @media screen and (min-width: $DESKTOP_SIZE) {
     flex: 6;
   }

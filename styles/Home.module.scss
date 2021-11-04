@@ -1,0 +1,43 @@
+$SMALL_SMART_PHONE_SIZE:   280px;
+$SMART_PHONE_SIZE:         414px;
+$TABLET_SIZE:              768px;
+$DESKTOP_SIZE:             1150px;
+
+.container {
+  @media screen and (min-width: $SMALL_SMART_PHONE_SIZE) {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1.5em;
+  }
+
+  @media screen and (min-width: $DESKTOP_SIZE) {
+    width: calc(100vw - 1em);
+    height: calc(100vh - 2em);
+    display: flex;
+    padding-right: 0;
+  }
+}
+
+.summary {
+
+  @media screen and (min-width: $SMALL_SMART_PHONE_SIZE) {
+    text-align: center;
+
+    .socialMedias {
+      margin-top: 3em;
+      display: flex;
+    }
+  }
+  
+  @media screen and (min-width: $DESKTOP_SIZE) {
+    flex: 5;
+  }
+
+
+}
+
+.information {
+  @media screen and (min-width: $DESKTOP_SIZE) {
+    flex: 6;
+  }
+}

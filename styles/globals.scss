@@ -1,15 +1,19 @@
-html,
 body {
   background-color: var(--BLACK);
+  color: var(--WHITE);
+  font-family: var(--FONT_FAMILY);
 }
+
 :root {
-  --BLACK:                #161616;     
-  --WHITE:                #fff;
+  --BLACK:                  #161616;     
+  --WHITE:                  #fff;
  
-  --GRAY_DARK:            #242424;
+  --GRAY_DARK:              #242424;
      
-  --BLUE:                 #177ddc;
-  --BLUE_LIGHT-PRIMARY:   #34aefa;
-  --BLUE_LIGHT-SECONDARY: #65b7f3;
-  --BLUE_LIGHT-TERTIARY:  #b7e3fa;
+  --BLUE:                   #177ddc;
+  --BLUE_LIGHT-PRIMARY:     #34aefa;
+  --BLUE_LIGHT-SECONDARY:   #65b7f3;
+  --BLUE_LIGHT-TERTIARY:    #b7e3fa;
+  
+  --FONT_FAMILY:            'Montserrat', sans-serif;
 }

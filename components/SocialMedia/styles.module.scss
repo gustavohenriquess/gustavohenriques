@@ -1,7 +1,24 @@
+$SMALL_SMART_PHONE_SIZE:   280px;
+$SMART_PHONE_SIZE:         414px;
+$TABLET_SIZE:              768px;
+$DESKTOP_SIZE:             1150px;
+
 .mediaWeb {
   
+  @media screen and (min-width: $SMALL_SMART_PHONE_SIZE) {
+    margin: 0 auto;
+
+    a {
+      text-align: center;
+      color: var(--WHITE);
+    }
+    p {
+      display: none
+    }
+  }
+    
+/*
   a {
-    color: var(--WHITE);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -13,7 +30,7 @@
     width: auto;
     margin-left: 1.5em;
     font-size: .6em;
-  }
+  }*/
 }
 
 .mediaCard {

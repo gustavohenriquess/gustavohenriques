@@ -4,10 +4,12 @@ import Head from 'next/head'
 import { SocialMedia } from '../components/SocialMedia'
 import { User } from '../components/User'
 import { Experience } from '../components/Experience'
+import { Course } from '../components/Course'
 
 import {getMedias} from './api/socialMedia'
 import {getUser} from './api/userData'
 import { getExperiences } from './api/experiences'
+import { getCourses } from './api/courses'
 
 import styles from '../styles/Home.module.scss'
 
@@ -15,6 +17,7 @@ const Home: NextPage = () => {
   const medias = getMedias();
   const user = getUser();
   const experiences = getExperiences();
+  const courses = getCourses();
 
   return (
     <div className={styles.container}>
@@ -49,7 +52,7 @@ const Home: NextPage = () => {
           { experiences.map((experience) => {
               return (
                 <Experience 
-                  key={experience.title}
+                  key={`${experience.company}__${experience.title}`}
                   title={experience.title}
                   company={experience.company}
                   description={experience.description}
@@ -57,6 +60,24 @@ const Home: NextPage = () => {
               )
             })
           }
+
+          <section className={styles.courses}>
+            
+            <h2>Cursos</h2>
+            
+            { courses.map((course) => {
+              return (
+                <Course
+                  key={course.key}
+                  title={course.title}
+                  href={course.href}
+                  company={course.company}
+                  date={course.date}
+                />
+            )})
+            }
+
+          </section>
       </div>
       
 

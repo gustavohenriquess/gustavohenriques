@@ -1,11 +1,12 @@
 .userImage {
   border-radius: 50%;
   border: 1px solid var(--BLUE_LIGHT-PRIMARY) !important;
+  cursor: pointer;
 }
 
 .name {
   color: var(--BLUE);
-  letter-spacing: .3em;
+  letter-spacing: .4em;
 }
 
 .office {

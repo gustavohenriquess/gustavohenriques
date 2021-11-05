@@ -6,7 +6,6 @@ $DESKTOP_SIZE:             1150px;
 .container {
   @media screen and (min-width: $SMALL_SMART_PHONE_SIZE) {
     padding-left: 1em;
-    padding-right: 1em;
     padding-top: 1em;
   }
 
@@ -38,7 +37,7 @@ $DESKTOP_SIZE:             1150px;
   @media screen and (min-width: $DESKTOP_SIZE) {
     text-align: left;
     flex: 5;
-
+    padding-right: 1em;
     .socialMedias {
      display: flex;
      flex-direction: column;
@@ -76,7 +75,7 @@ $DESKTOP_SIZE:             1150px;
   @media screen and (min-width: $DESKTOP_SIZE) {
     flex: 6;
     overflow-y: auto;
-    padding-right: 1em;
+    padding: 0 1em;
     margin-top: 0em;
 
     &::-webkit-scrollbar {

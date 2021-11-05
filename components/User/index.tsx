@@ -25,8 +25,8 @@ export function User(props: User) {
           <Image
             className={styles.userImage}
 
-            width={190}
-            height={190}
+            width={195}
+            height={195}
             src={logo}
             alt={props.alt_image}
             onClick={changeLogo}

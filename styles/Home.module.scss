@@ -6,6 +6,7 @@ $DESKTOP_SIZE:             1150px;
 .container {
   @media screen and (min-width: $SMALL_SMART_PHONE_SIZE) {
     padding-left: 1em;
+    padding-right: 1em;
     padding-top: 1em;
   }
 
@@ -79,7 +80,7 @@ $DESKTOP_SIZE:             1150px;
     margin-top: 0em;
 
     &::-webkit-scrollbar {
-      width: .47rem;
+      width: .5rem;
     }
     &::-webkit-scrollbar-track {
       background: #0D1117;        /* color of the tracking area */

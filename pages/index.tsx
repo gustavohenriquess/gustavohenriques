@@ -48,6 +48,7 @@ const Home: NextPage = () => {
           })}
       </section>
       </div>
+      
       <div className={styles.information}>
           { experiences.map((experience) => {
               return (
@@ -61,9 +62,10 @@ const Home: NextPage = () => {
             })
           }
 
+          <h2>Cursos</h2>
           <section className={styles.courses}>
             
-            <h2>Cursos</h2>
+            
             
             { courses.map((course) => {
               return (

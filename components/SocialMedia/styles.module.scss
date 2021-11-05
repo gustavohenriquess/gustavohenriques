@@ -17,6 +17,18 @@ $DESKTOP_SIZE:             1150px;
     }
   }
     
+  @media screen and (min-width: $TABLET_SIZE) {
+
+    a {
+      text-decoration: none;
+    }
+
+    p {
+      display: block
+    }
+
+  }
+  
 /*
   a {
     display: flex;

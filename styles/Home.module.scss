@@ -29,6 +29,12 @@ $DESKTOP_SIZE:             1150px;
     }
   }
   
+
+  @media screen and (min-width: $TABLET_SIZE) {
+    .socialMedias {
+      margin-top: 4em;
+    }
+  }
   @media screen and (min-width: $DESKTOP_SIZE) {
     flex: 5;
   }
@@ -41,12 +47,20 @@ $DESKTOP_SIZE:             1150px;
   @media screen and (min-width: $SMALL_SMART_PHONE_SIZE) {
     margin-top: 4em;
 
-    .courses {
+    h2{
       margin-top: 4em;
-    }
-    
-    .courses h2{
       text-align: center;
+    }
+  }
+
+  @media screen and (min-width: $TABLET_SIZE) {
+    .courses {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      article {
+        margin: .5em;
+      }
     }
   }
 

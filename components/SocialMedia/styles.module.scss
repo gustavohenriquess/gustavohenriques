@@ -29,20 +29,25 @@ $DESKTOP_SIZE:             1150px;
 
   }
   
-/*
-  a {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 2em;
-    text-decoration: none;
-  }
+  @media screen and (min-width: $DESKTOP_SIZE) {
 
-  p {
-    width: auto;
-    margin-left: 1.5em;
-    font-size: .6em;
-  }*/
+    margin: 0;
+    font-size: 2em;
+
+    a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 1em;
+      text-decoration: none;
+    }
+
+    p {
+      width: auto;
+      margin-left: 1.5em;
+      font-size: .6em;
+    }
+  }
 }
 
 .mediaCard {

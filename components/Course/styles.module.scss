@@ -15,6 +15,10 @@ $DESKTOP_SIZE:             1150px;
   @media screen and (min-width: $TABLET_SIZE) {
     height: 170px;
   }
+
+  @media screen and (min-width: $DESKTOP_SIZE) {
+    height: 200px;
+  }
     
   .title {
     color: var(--BLUE);

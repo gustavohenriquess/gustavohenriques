@@ -36,7 +36,16 @@ $DESKTOP_SIZE:             1150px;
     }
   }
   @media screen and (min-width: $DESKTOP_SIZE) {
+    text-align: left;
     flex: 5;
+
+    .socialMedias {
+     display: flex;
+     flex-direction: column;
+     position: absolute;
+     bottom: 0;
+    }
+    
   }
 
 
@@ -66,5 +75,21 @@ $DESKTOP_SIZE:             1150px;
 
   @media screen and (min-width: $DESKTOP_SIZE) {
     flex: 6;
+    overflow-y: auto;
+    padding-right: 1em;
+    margin-top: 0em;
+
+    &::-webkit-scrollbar {
+      width: .47rem;
+    }
+    &::-webkit-scrollbar-track {
+      background: #0D1117;        /* color of the tracking area */
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      background-color: #dfd8d8;    /* color of the scroll thumb */
+      border-radius: 20px;       /* roundness of the scroll thumb */
+      border: 1px solid #0D1117;  /* creates padding around scroll thumb */
+    }
   }
 }

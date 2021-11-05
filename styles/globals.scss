@@ -2,6 +2,20 @@ body {
   background-color: var(--BLACK);
   color: var(--WHITE);
   font-family: var(--FONT_FAMILY);
+  margin: 0;
+
+  &::-webkit-scrollbar {
+    width: .47rem;
+  }
+  &::-webkit-scrollbar-track {
+    background: #0D1117;        /* color of the tracking area */
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background-color: #dfd8d8;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 1px solid #0D1117;  /* creates padding around scroll thumb */
+  }
 }
 
 :root {

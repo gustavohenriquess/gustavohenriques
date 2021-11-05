@@ -24,7 +24,6 @@ export function User(props: User) {
    <> 
           <Image
             className={styles.userImage}
-
             width={195}
             height={195}
             src={logo}

@@ -19,6 +19,4 @@ export function SocialMedia({title, icon: Icon, href, type}: Props) {
       </a>
     </span>
   )
-
-  
 }

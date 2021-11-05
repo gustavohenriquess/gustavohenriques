@@ -12,6 +12,7 @@ $DESKTOP_SIZE:             1150px;
       text-align: center;
       color: var(--WHITE);
     }
+
     p {
       display: none
     }
@@ -26,7 +27,6 @@ $DESKTOP_SIZE:             1150px;
     p {
       display: block
     }
-
   }
   
   @media screen and (min-width: $DESKTOP_SIZE) {

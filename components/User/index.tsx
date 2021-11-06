@@ -34,7 +34,7 @@ export function User(props: User) {
           <h1 className={styles.name} >{props.name}</h1>
           <p className={styles.office}>{props.office}</p>
           
-          {props.summary.map(text => {
+          {props.summary && props.summary.map(text => {
             return (<p key={text}>{text}</p>)
           })}
         </section>

@@ -1,4 +1,5 @@
 import { IconBaseProps } from "react-icons";
+import { CgBrowser } from "react-icons/cg";
 
 import {
   FaTelegramPlane,
@@ -30,12 +31,50 @@ const media: Media[] = [
   },
 ];
 
+const mediaCard: Media[] = [
+  {
+    title: "Website",
+    href: "/",
+    icon: CgBrowser,
+    target: "_self",
+  },
+  {
+    title: "Github",
+    href: "https://github.com/gustavohenriquess",
+    icon: FaGithub,
+    target: "_blank",
+  },
+  {
+    title: "Linkedin",
+    href: "https://www.linkedin.com/in/GuHenrique/",
+    icon: FaLinkedinIn,
+    target: "_blank",
+  },
+  {
+    title: "Telegram",
+    href: "https://telegram.me/gustavohenriques",
+    icon: FaTelegramPlane,
+    target: "_blank",
+  },
+  {
+    title: "E-mail",
+    href: "mailto: gustavo._henrique@hotmail.com",
+    icon: FaEnvelope,
+    target: "_blank",
+  },
+];
+
 type Media = {
   title: string;
   href: string;
   icon: React.ComponentType<IconBaseProps>;
+  target?: string;
 };
 
 export function getMedias() {
   return media;
+}
+
+export function getMediasCard() {
+  return mediaCard;
 }

@@ -1,0 +1,30 @@
+$SMALL_SMART_PHONE_SIZE:   280px;
+$SMART_PHONE_SIZE:         414px;
+$TABLET_SIZE:              768px;
+
+.container {
+  @media screen and (min-width: $SMALL_SMART_PHONE_SIZE) {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+  }
+}
+
+.summary {
+  @media screen and (min-width: $SMALL_SMART_PHONE_SIZE) {
+    text-align: center;
+    
+    .socialMedias {
+      margin-top: 3em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media screen and (min-width: $TABLET_SIZE) {
+    .socialMedias {
+      margin-top: 4em;
+    }
+  }
+}

@@ -4,5 +4,5 @@ export type User = {
   alt_image: string;
   name: string;
   office: string;
-  summary: string[];
+  summary?: string[];
 };

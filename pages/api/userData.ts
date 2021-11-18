@@ -4,7 +4,7 @@ const user: User = {
   logo: "/logo.png",
   image: "/foto.jpeg",
   alt_image: "Logo do Site",
-  office: "Analista de Desenvolvimento Junior",
+  office: "Desenvolvedor Backend",
   name: "Gustavo Henrique",
   summary: [
     "Estudante de Engenharia da Computação.",

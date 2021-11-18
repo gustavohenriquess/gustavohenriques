@@ -2,6 +2,13 @@ import { Course } from "../../@types/Course";
 
 const courses: Course[] = [
   {
+    title: "Cloud Fundamentals, Administration and Solution Architect",
+    company: "Fiap",
+    date: "Novembro de 2021",
+    href: "https://on.fiap.com.br/pluginfile.php/1/local_nanocourses/certificado_nanocourse/29350/ccede241a450dc54c654cfb0e4e86ff2/certificado.png",
+    key: "ccede241a450dc54c654cfb0e4e86ff2",
+  },
+  {
     title: "NODE.JS: REFRESH TOKENS E CONFIRMAÇÃO DE CADASTRO",
     company: "Alura",
     date: "Junho de 2021",

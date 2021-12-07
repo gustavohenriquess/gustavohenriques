@@ -93,7 +93,7 @@ const courses: Course[] = [
     key: "d794f64c-87af-490d-9d36-fd3e87640da6",
   },
   {
-    title: "HTTP: MONGODB: UMA ALTERNATIVA AOS BANCOS RELACIONAIS TRADICIONAIS",
+    title: "MONGODB: UMA ALTERNATIVA AOS BANCOS RELACIONAIS TRADICIONAIS",
     company: "Alura",
     date: "Outubro de 2019",
     href: "https://cursos.alura.com.br/certificate/7c8d5017-20db-4256-af4d-e89872f479f0",

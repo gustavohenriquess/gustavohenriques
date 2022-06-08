@@ -23,7 +23,7 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <Head>
         <title>{user.name}</title>
-        <meta name="description" content={` ${user.name}, ${user.office}`}/>
+        <meta name="description" content={` ${user.name}, ${user.translate['pt'].office}`}/>
       </Head>
       
       <div className={styles.summary}>
@@ -31,10 +31,10 @@ const Home: NextPage = () => {
       <User 
             logo={user.logo} 
             image={user.image} 
-            alt_image={user.alt_image} 
-            office={user.office}
             name={user.name}
-            summary={user.summary}
+            alt_image={user.translate['pt'].alt_image}
+            office={user.translate['pt'].office}
+            summary={user.translate['pt'].summary}
       />
       <section className={styles.socialMedias}>
         { medias.map((media) => {
@@ -53,10 +53,10 @@ const Home: NextPage = () => {
           { experiences.map((experience) => {
               return (
                 <Experience 
-                  key={`${experience.company}__${experience.title}`}
-                  title={experience.title}
+                  key={`${experience.company}__${experience.translate['pt'].title}`}
+                  description={experience.translate['pt'].description}
+                  title={experience.translate['pt'].title}
                   company={experience.company}
-                  description={experience.description}
                 />
               )
             })

@@ -16,7 +16,7 @@ const media: Media[] = [
   },
   {
     title: "Linkedin",
-    href: "https://www.linkedin.com/in/GuHenrique/",
+    href: "https://www.linkedin.com/in/gustavohenriquess/",
     icon: FaLinkedinIn,
   },
   {
@@ -46,7 +46,7 @@ const mediaCard: Media[] = [
   },
   {
     title: "Linkedin",
-    href: "https://www.linkedin.com/in/GuHenrique/",
+    href: "https://www.linkedin.com/in/gustavohenriquess/",
     icon: FaLinkedinIn,
     target: "_blank",
   },

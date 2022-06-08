@@ -5,7 +5,16 @@ import {User} from '../../@types/User'
 
 import styles from './styles.module.scss'
 
-export function User(props: User) {
+type UserType = {
+  logo: string;
+  image: string;
+  alt_image: string;
+  name: string;
+  office: string;
+  summary?: string[];
+};
+
+export function User(props: UserType) {
 
   const [logo, setLogo] = useState(props.logo);
 

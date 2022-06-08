@@ -1,8 +1,14 @@
-import { Experience } from '../../@types/Experience'
 
 import styles from './styles.module.scss'
 
-export function Experience(props: Experience) {
+type ExperienceType = {
+  company: string;
+  title: string;
+  description: string[];
+  
+};
+
+export function Experience(props: ExperienceType) {
   
   return (
     <article className={styles.container}>

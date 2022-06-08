@@ -7,7 +7,7 @@ const user: User = {
   translate: {
     pt: {
       alt_image: "Website logo",
-      office: "Engenheiro da Computação | Desenvolvedor Backend NodeJS",
+      office: "Engenheiro da computação | Desenvolvedor backend NodeJS",
       summary: [
         `Apaixonado por desenvolvimento, aprender, enfrentar desafios e compartilhar conhecimento.`,
         `Experiência em NodeJS, Html, CSS, Javascript, MongoDB, SQLServer, Oracle, Docker, metodologia de Kanban.`,
@@ -17,7 +17,7 @@ const user: User = {
     },
     en: {
       alt_image: "Website logo",
-      office: "Computer Engineer | NodeJS Backend Developer",
+      office: "Computer engineer | NodeJS Backend developer",
       summary: [
         `Passionate about development, learning, facing challenges and sharing knowledge.`,
         `Experience in NodeJS, Html, CSS, Javascript, MongoDB, SQLServer, Oracle, Docker, Kanban methodology.`,

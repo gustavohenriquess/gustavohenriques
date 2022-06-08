@@ -15,7 +15,7 @@ export function Experience(props: ExperienceType) {
           <h3 className={styles.title} >{props.title}</h3>
           <h5 className={styles.company} >{props.company}</h5>
           {props.description.map(text => {
-            return (<p key={text}>{text}</p>)
+            return (<p className={styles.description} key={text}>{text}</p>)
           })}
     </article>
   )

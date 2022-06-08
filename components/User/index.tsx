@@ -4,6 +4,7 @@ import Image from 'next/image';
 import {User} from '../../@types/User'
 
 import styles from './styles.module.scss'
+import { func } from 'prop-types';
 
 type UserType = {
   logo: string;
@@ -17,7 +18,7 @@ type UserType = {
 export function User(props: UserType) {
 
   const [logo, setLogo] = useState(props.logo);
-
+  const [changed, setChanged] = useState(false);
   function changeLogo(){
 
     if(props.logo && props.image != props.logo){
@@ -28,6 +29,18 @@ export function User(props: UserType) {
       }
     }
   }
+
+  function change(){
+    if(!changed){
+
+      setTimeout(() => {
+        changeLogo();
+      }, 1000*60);
+      setChanged(true);
+    }
+  }
+  
+  change();
   
   return (
    <> 
@@ -44,7 +57,7 @@ export function User(props: UserType) {
           <p className={styles.office}>{props.office}</p>
           
           {props.summary && props.summary.map(text => {
-            return (<p key={text}>{text}</p>)
+            return (<p className={styles.summary} key={text}>{text}</p>)
           })}
         </section>
    </>

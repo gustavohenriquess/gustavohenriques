@@ -11,6 +11,9 @@ import {getUser} from './api/userData'
 import { getExperiences } from './api/experiences'
 import { getCourses } from './api/courses'
 
+import Image from 'next/image';
+import { useState } from 'react'
+
 import styles from '../styles/Home.module.scss'
 
 const Home: NextPage = () => {
@@ -18,23 +21,56 @@ const Home: NextPage = () => {
   const user = getUser();
   const experiences = getExperiences();
   const courses = getCourses();
+  const [language, setLaguage] = useState('en');
+  
+
+  function changeLanguage(){
+    
+    switch(language){
+      case 'en':
+        setLaguage('pt');
+        break;
+      case 'pt':
+        setLaguage('en');
+        break;
+    }
+  }
 
   return (
     <div className={styles.container}>
       <Head>
         <title>{user.name}</title>
-        <meta name="description" content={` ${user.name}, ${user.translate['pt'].office}`}/>
+        <meta name="description" content={` ${user.name}, ${user.translate[language].office}`}/>
       </Head>
-      
+
+      <div className={styles.flag}>
+      <Image
+        className={language === 'pt' ? styles.notSelected : styles.selected}
+        width={35}
+        height={35}
+        src={'/brazil.png'}
+        alt={'flag'}
+        onClick={changeLanguage}
+            />
+      <Image
+        className={language === 'en' ? styles.notSelected : styles.selected}
+        width={35}
+        height={35}
+        src={'/usa.png'}
+        alt={'flag'}
+        onClick={changeLanguage}
+            />
+    </div>
+
       <div className={styles.summary}>
 
       <User 
             logo={user.logo} 
             image={user.image} 
             name={user.name}
-            alt_image={user.translate['pt'].alt_image}
-            office={user.translate['pt'].office}
-            summary={user.translate['pt'].summary}
+            alt_image={user.translate[language].alt_image}
+            office={user.translate[language].office}
+            summary={user.translate[language].summary}
       />
       <section className={styles.socialMedias}>
         { medias.map((media) => {
@@ -53,16 +89,16 @@ const Home: NextPage = () => {
           { experiences.map((experience) => {
               return (
                 <Experience 
-                  key={`${experience.company}__${experience.translate['pt'].title}`}
-                  description={experience.translate['pt'].description}
-                  title={experience.translate['pt'].title}
+                  key={`${experience.company}__${experience.translate[language].title}`}
+                  description={experience.translate[language].description}
+                  title={experience.translate[language].title}
                   company={experience.company}
                 />
               )
             })
           }
 
-          <h2>Cursos</h2>
+          <h2>{language === 'en' ? 'Courses' :'Cursos'}</h2>
           <section className={styles.courses}>
             
             

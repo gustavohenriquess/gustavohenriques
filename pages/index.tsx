@@ -16,12 +16,14 @@ import { useState } from 'react'
 
 import styles from '../styles/Home.module.scss'
 
+type LangType = 'en' | 'pt'
+
 const Home: NextPage = () => {
   const medias = getMedias();
   const user = getUser();
   const experiences = getExperiences();
   const courses = getCourses();
-  const [language, setLaguage] = useState('en');
+  const [language, setLaguage] = useState<LangType>('en');
   
 
   function changeLanguage(){

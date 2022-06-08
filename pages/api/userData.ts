@@ -11,8 +11,8 @@ const user: User = {
       summary: [
         `Apaixonado por desenvolvimento, aprender, enfrentar desafios e compartilhar conhecimento.`,
         `Experiência em NodeJS, Html, CSS, Javascript, MongoDB, SQLServer, Oracle, Docker, metodologia de Kanban.`,
-        `Atual foco em Arquitetura de Projetos, Desenvolvimento em NodeJS com TypeScript e aprendendo GoLang nas horas vagas.`,
-        `Quero fazer a diferença e desenvolver soluções com valores agregados para empresa/cliente!`,
+        `Atual foco em arquitetura de projetos, desenvolvimento em NodeJS com TypeScript e aprendendo GoLang nas horas vagas.
+        Quero fazer a diferença e desenvolver soluções com valores agregados para empresa/cliente!`,
       ],
     },
     en: {
@@ -21,8 +21,8 @@ const user: User = {
       summary: [
         `Passionate about development, learning, facing challenges and sharing knowledge.`,
         `Experience in NodeJS, Html, CSS, Javascript, MongoDB, SQLServer, Oracle, Docker, Kanban methodology.`,
-        `Current focus on Project Architecture, NodeJS Development with TypeScript and learning GoLang in my spare time.`,
-        `I want to make a difference and develop value-added solutions for the company/client!`,
+        `Current focus on project architecture, NodeJS development with TypeScript and learning GoLang in my spare time.
+        I want to make a difference and develop value-added solutions for the company/client!`,
       ],
     },
   },

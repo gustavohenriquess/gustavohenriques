@@ -25,7 +25,7 @@ const media: Media[] = [
     icon: FaTelegramPlane,
   },
   {
-    title: "E-mail",
+    title: "Email",
     href: "mailto: gustavo._henrique@hotmail.com",
     icon: FaEnvelope,
   },
@@ -57,7 +57,7 @@ const mediaCard: Media[] = [
     target: "_blank",
   },
   {
-    title: "E-mail",
+    title: "Email",
     href: "mailto: gustavo._henrique@hotmail.com",
     icon: FaEnvelope,
     target: "_blank",

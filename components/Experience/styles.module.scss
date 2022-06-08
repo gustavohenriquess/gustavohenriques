@@ -7,9 +7,16 @@
 
 .title {
   color: var(--BLUE_LIGHT-SECONDARY);
+  letter-spacing: .1em;
+
 }
 
 .company {
   letter-spacing: .20em;
   color: var(--BLUE_LIGHT-TERTIARY);
+}
+
+.description {
+  line-height: 1.45em;
+  color: var(--WHITE);
 }

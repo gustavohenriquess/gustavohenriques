@@ -16,7 +16,7 @@ const media: Media[] = [
   },
   {
     title: "Linkedin",
-    href: "https://www.linkedin.com/in/GuHenrique/",
+    href: "https://www.linkedin.com/in/gustavohenriquess/",
     icon: FaLinkedinIn,
   },
   {
@@ -25,7 +25,7 @@ const media: Media[] = [
     icon: FaTelegramPlane,
   },
   {
-    title: "E-mail",
+    title: "Email",
     href: "mailto: gustavo._henrique@hotmail.com",
     icon: FaEnvelope,
   },
@@ -46,7 +46,7 @@ const mediaCard: Media[] = [
   },
   {
     title: "Linkedin",
-    href: "https://www.linkedin.com/in/GuHenrique/",
+    href: "https://www.linkedin.com/in/gustavohenriquess/",
     icon: FaLinkedinIn,
     target: "_blank",
   },
@@ -57,7 +57,7 @@ const mediaCard: Media[] = [
     target: "_blank",
   },
   {
-    title: "E-mail",
+    title: "Email",
     href: "mailto: gustavo._henrique@hotmail.com",
     icon: FaEnvelope,
     target: "_blank",

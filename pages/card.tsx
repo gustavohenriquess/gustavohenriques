@@ -20,7 +20,7 @@ const Card: NextPage = () => {
         <meta name="description" content={` ${user.name}, ${user.translate['pt'].office}`}/>
       </Head>
       
-      <div className={styles.summary}>
+      <div className={styles.user}>
 
       <User 
             logo={user.logo} 

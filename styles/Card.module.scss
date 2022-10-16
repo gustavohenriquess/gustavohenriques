@@ -28,3 +28,17 @@ $TABLET_SIZE:              768px;
     }
   }
 }
+
+.flag {
+  position: absolute !important;
+  z-index: 1;
+  top: .5em;
+  right: 1em;
+  display: flex;
+  cursor: pointer;
+  gap: .3em;
+}
+
+.selected{
+  opacity: .5;
+}

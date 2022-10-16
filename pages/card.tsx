@@ -1,5 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Image from 'next/image';
+import { useState } from 'react';
+
 
 import { SocialMedia } from '../components/SocialMedia'
 import { User } from '../components/User'
@@ -9,9 +12,24 @@ import {getUser} from './api/userData'
 
 import styles from '../styles/Card.module.scss'
 
+type LangType = 'en' | 'pt'
+
 const Card: NextPage = () => {
   const medias = getMediasCard();
   const user = getUser();
+  const [language, setLaguage] = useState<LangType>('en');
+
+  function changeLanguage(){
+    
+    switch(language){
+      case 'en':
+        setLaguage('pt');
+        break;
+      case 'pt':
+        setLaguage('en');
+        break;
+    }
+  }
 
   return (
     <div className={styles.container}>
@@ -19,6 +37,25 @@ const Card: NextPage = () => {
         <title>Gustavo Henriques</title>
         <meta name="description" content={` ${user.name}, ${user.translate['pt'].office}`}/>
       </Head>
+
+      <div className={styles.flag}>
+      <Image
+        className={language === 'pt' ? styles.notSelected : styles.selected}
+        width={35}
+        height={35}
+        src={'/brazil.png'}
+        alt={'flag'}
+        onClick={changeLanguage}
+            />
+      <Image
+        className={language === 'en' ? styles.notSelected : styles.selected}
+        width={35}
+        height={35}
+        src={'/usa.png'}
+        alt={'flag'}
+        onClick={changeLanguage}
+            />
+    </div>
       
       <div className={styles.user}>
 
@@ -26,9 +63,9 @@ const Card: NextPage = () => {
             logo={user.logo} 
             image={user.image} 
             name={user.name}
-            alt_image={user.translate['pt'].alt_image}
-            office={user.translate['pt'].office}
-            summary={user.translate['pt'].summary}
+            alt_image={user.translate[language].alt_image}
+            office={user.translate[language].office}
+            summary={user.translate[language].summary}
             showSummary={false}
       />
       <section className={styles.socialMedias}>

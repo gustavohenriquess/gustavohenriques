@@ -73,6 +73,7 @@ const Home: NextPage = () => {
             alt_image={user.translate[language].alt_image}
             office={user.translate[language].office}
             summary={user.translate[language].summary}
+            showSummary={true}
       />
       <section className={styles.socialMedias}>
         { medias.map((media) => {

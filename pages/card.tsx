@@ -29,6 +29,7 @@ const Card: NextPage = () => {
             alt_image={user.translate['pt'].alt_image}
             office={user.translate['pt'].office}
             summary={user.translate['pt'].summary}
+            showSummary={false}
       />
       <section className={styles.socialMedias}>
         { medias.map((media) => {

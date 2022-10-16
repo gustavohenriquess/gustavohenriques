@@ -13,6 +13,7 @@ type UserType = {
   name: string;
   office: string;
   summary?: string[];
+  showSummary?: boolean;
 };
 
 export function User(props: UserType) {
@@ -56,7 +57,7 @@ export function User(props: UserType) {
           <h1 className={styles.name} >{props.name}</h1>
           <p className={styles.office}>{props.office}</p>
           
-          {props.summary && props.summary.map(text => {
+          {props.showSummary && props.summary && props.summary.map(text => {
             return (<p className={styles.summary} key={text}>{text}</p>)
           })}
         </section>

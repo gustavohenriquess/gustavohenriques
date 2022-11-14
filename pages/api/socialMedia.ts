@@ -6,6 +6,7 @@ import {
   FaEnvelope,
   FaLinkedinIn,
   FaGithub,
+  FaInstagram,
 } from "react-icons/fa";
 
 const media: Media[] = [
@@ -13,6 +14,11 @@ const media: Media[] = [
     title: "Github",
     href: "https://github.com/gustavohenriquess",
     icon: FaGithub,
+  },
+  {
+    title: "Instagram",
+    href: "https://www.instagram.com/gustaavohenriques/",
+    icon: FaInstagram,
   },
   {
     title: "Linkedin",

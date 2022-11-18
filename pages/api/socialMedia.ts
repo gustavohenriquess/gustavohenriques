@@ -51,6 +51,11 @@ const mediaCard: Media[] = [
     target: "_blank",
   },
   {
+    title: "Instagram",
+    href: "https://www.instagram.com/gustaavohenriques/",
+    icon: FaInstagram,
+  },
+  {
     title: "Linkedin",
     href: "https://www.linkedin.com/in/gustavohenriquess/",
     icon: FaLinkedinIn,

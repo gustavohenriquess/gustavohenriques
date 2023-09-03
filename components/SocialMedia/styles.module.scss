@@ -42,10 +42,15 @@ $DESKTOP_SIZE:             1150px;
       text-decoration: none;
     }
 
+    svg {
+      width: 1.2em;
+      height: 1.2em;
+    }
+
     p {
       width: auto;
-      margin-left: 1.5em;
-      font-size: .65em;
+      margin-left: 1.2em;
+      font-size: .60em;
     }
   }
 }

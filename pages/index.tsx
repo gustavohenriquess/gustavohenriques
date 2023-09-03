@@ -6,8 +6,8 @@ import { User } from '../components/User'
 import { Experience } from '../components/Experience'
 import { Course } from '../components/Course'
 
-import {getMedias} from './api/socialMedia'
-import {getUser} from './api/userData'
+import { getMedias } from './api/socialMedia'
+import { getUser } from './api/userData'
 import { getExperiences } from './api/experiences'
 import { getCourses } from './api/courses'
 
@@ -24,11 +24,11 @@ const Home: NextPage = () => {
   const experiences = getExperiences();
   const courses = getCourses();
   const [language, setLaguage] = useState<LangType>('en');
-  
 
-  function changeLanguage(){
-    
-    switch(language){
+
+  function changeLanguage() {
+
+    switch (language) {
       case 'en':
         setLaguage('pt');
         break;
@@ -42,85 +42,86 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <Head>
         <title>{user.name}</title>
-        <meta name="description" content={` ${user.name}, ${user.translate[language].office}`}/>
+        <meta name="description" content={` ${user.name}, ${user.translate[language].office}`} />
       </Head>
 
       <div className={styles.flag}>
-      <Image
-        className={language === 'pt' ? styles.notSelected : styles.selected}
-        width={35}
-        height={35}
-        src={'/brazil.png'}
-        alt={'flag'}
-        onClick={changeLanguage}
-            />
-      <Image
-        className={language === 'en' ? styles.notSelected : styles.selected}
-        width={35}
-        height={35}
-        src={'/usa.png'}
-        alt={'flag'}
-        onClick={changeLanguage}
-            />
-    </div>
+        <Image
+          className={language === 'pt' ? styles.notSelected : styles.selected}
+          width={30}
+          height={30}
+          src={'/brazil.png'}
+          alt={'flag'}
+          onClick={changeLanguage}
+        />
+        <Image
+          className={language === 'en' ? styles.notSelected : styles.selected}
+          width={30}
+          height={30}
+          src={'/usa.png'}
+          alt={'flag'}
+          onClick={changeLanguage}
+        />
+      </div>
 
       <div className={styles.summary}>
 
-      <User 
-            logo={user.logo} 
-            image={user.image} 
-            name={user.name}
-            alt_image={user.translate[language].alt_image}
-            office={user.translate[language].office}
-            summary={user.translate[language].summary}
-            showSummary={true}
-      />
-      <section className={styles.socialMedias}>
-        { medias.map((media) => {
-          return (<SocialMedia
-            key={media.title}
-            type='W'
-            title={media.title}
-            icon={media.icon}
-            href={media.href}
+        <User
+          logo={user.logo}
+          image={user.image}
+          name={user.name}
+          alt_image={user.translate[language].alt_image}
+          office={user.translate[language].office}
+          summary={user.translate[language].summary}
+          showSummary={true}
+        />
+        <section className={styles.socialMedias}>
+          {medias.map((media) => {
+            return (<SocialMedia
+              key={media.title}
+              type='W'
+              title={media.title}
+              icon={media.icon}
+              href={media.href}
             />)
           })}
-      </section>
+        </section>
       </div>
-      
+
       <div className={styles.information}>
-          { experiences.map((experience) => {
-              return (
-                <Experience 
-                  key={`${experience.company}__${experience.translate[language].title}`}
-                  description={experience.translate[language].description}
-                  title={experience.translate[language].title}
-                  company={experience.company}
-                />
-              )
-            })
+        {experiences.map((experience) => {
+          return (
+            <Experience
+              key={`${experience.company}__${experience.translate[language].title}`}
+              description={experience.translate[language].description}
+              title={experience.translate[language].title}
+              company={experience.company}
+            />
+          )
+        })
+        }
+
+        <h2>{language === 'en' ? 'Courses' : 'Cursos'}</h2>
+        <section className={styles.courses}>
+
+
+
+          {courses.map((course) => {
+            return (
+              <Course
+                key={course.key}
+                title={course.title}
+                href={course.href}
+                company={course.company}
+                date={course.date}
+              />
+            )
+          })
           }
 
-          <h2>{language === 'en' ? 'Courses' :'Cursos'}</h2>
-          <section className={styles.courses}>
-            
-            
-            
-            { courses.map((course) => {
-              return (
-                <Course
-                  key={course.key}
-                  title={course.title}
-                  href={course.href}
-                  company={course.company}
-                  date={course.date}
-                />
-            )})
-            }
-
-          </section>
+        </section>
       </div>
-      
+
 
     </div>
   )

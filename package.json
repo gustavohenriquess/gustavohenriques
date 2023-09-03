@@ -7,6 +7,9 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "engines": {
+    "node": "18"
+  },
   "dependencies": {
     "next": "12.0.2",
     "react": "17.0.2",

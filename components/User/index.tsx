@@ -1,10 +1,8 @@
 import { useState } from 'react';
 import Image from 'next/image';
 
-import { User } from '../../@types/User'
 
 import styles from './styles.module.scss'
-import { func } from 'prop-types';
 
 type UserType = {
   logo: string;

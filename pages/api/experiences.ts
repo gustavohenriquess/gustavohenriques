@@ -1,16 +1,21 @@
-import { Experience } from "../../@types/Experience";
+import {
+  Experience
+} from "../../@types/Experience";
 
-const experiences: Experience[] = [
-  {
+const experiences: Experience[] = [{
     company: "Accenture",
     translate: {
       pt: {
         title: "Application Development Analyst",
-        description: [],
+        description: ['Atuando como líder técnico em uma equipe multi funções, tenho como atribuição auxiliar nas definições de prioridades, estimativas de novos projetos e apoiando o PM e SM.',
+          'Como desenvolvedor backend atuo em projetos nodeJS, serverless, SNS, SQS, MongoDB e AWS.'
+        ],
       },
       en: {
         title: "Application Development Analyst",
-        description: [],
+        description: ['Acting as a technical leader in a multi-function team, I have the task of assisting in defining priorities, estimating new projects and supporting the PM and SM.',
+          'As a backend developer I work on projects with nodeJS, serverless, SNS, SQS, MongoDB and AWS.'
+        ],
       },
     },
   },

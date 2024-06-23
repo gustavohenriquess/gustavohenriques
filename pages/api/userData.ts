@@ -21,10 +21,10 @@ const user: User = {
       office: "Computer engineer | NodeJS Backend developer",
       summary: [
         `Developer for 6 years, working with Javascript, mainly NodeJS.`,
-        `During these years I acquired several skills, in the areas of technology, tools and management.`,
-        `I worked in consultancy and CRM development.`,
+        `During these years I expanded several skills tools on technology and management.`,
+        `I worked on consultancy and CRM development.`,
         `I participated in impact projects in both companies where I developed software for calls, email, product sales, chat, Gift Card, Bots for Whatsapp and Telegram.`,
-        `In the last two years, I focused on evolving and taking on more responsibilities in the projects I worked on, seeking to make a difference for both the company and the team.`,
+        `For the last two years, I focused on evolving and getting more responsibilities on the projects I was involved with, trying to make a difference for both companies and team.`,
       ],
     },
   },
